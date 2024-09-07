@@ -38,4 +38,4 @@ You can create as many input fields / value arrays as needed.
 </html>
 ```
 ## License
-I don't care, feel free to use any way you want.
+No license, feel free to contribute or use any other way you want.
