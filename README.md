@@ -15,7 +15,7 @@ As the user begins typing, the first suggestion appear inside the input box, no 
 
 2. Call `initACJSInputs()` function.
 
-3. Add `class="autocomplete-inputs"` to the input fields you want to have the autocomplete feature. Also, add `autocomplete="off"` to avoid browser's default autocomplete spoiling the fun.
+3. Add `class="autocomplete-input"` to the input fields you want to have the autocomplete feature. Also, add `autocomplete="off"` to avoid browser's default autocomplete spoiling the fun.
 
 4. Create the appropriate properties (arrays) of the ACJS object for each of your input fields, either manually or dynamically. *Hopefully I will soon prepare an **htmx** example of dynamically loading the suggestion array.*  
 **NOTE: The name of the property must match the name of your input field** (like in the example code below, when your input field is named `month` you'll add `ACJS.month`).  
