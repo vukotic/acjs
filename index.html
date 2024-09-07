@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ACJS default raw example</title>
+  <meta charset="UTF-8">
+ <style>
+ input{
+    font-family: arial, sans-serif;
+    font-size: 1.2rem;
+    width: 20rem;
+    padding: 1%;
+    margin: 0;
+    color: #000;
+}
+</style>
+</head>
+<body>
+
+<div style="padding: 1rem 2rem;">
+    <p>
+        <label for="country">Country:</label><br>
+        <input type ="text" name="country" id="country" tabindex="1" class="autocomplete-input" autocomplete="off">
+    </p>
+
+    <p>
+        <label for="month">Month:</label><br>
+        <input type ="text" name="month" id="month" tabindex="2" class="autocomplete-input" autocomplete="off">
+    </p>
+
+    <p>
+        <button type="button" tabindex="3" onclick="console.log('Submitted');">Submit</button>
+    </p>
+
+</div>
+
+<script src="js/ac.js"></script>
+<script>
+    initACJSInputs();
+    ACJS.country = ["Madagascar", "Malawi", "Malaysia", "Maldives", "Mali", "Malta", "Marshall Islands", "Mauritania", "Mauritius", "Mexico", "Micronesia", "Moldova", "Monaco", "Mongolia", "Montenegro", "Morocco", "Mozambique", "Myanmar"];
+    ACJS.month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+</script>
+</body>
+</html>
