@@ -4,7 +4,7 @@ I couldn't find anything exactly like this when I needed it for my app, so I put
 
 The script copies the existing style elements from the input fields, so it should work with any CSS library, without damaging the layout. Tested only with Bulma so far.
 
-As the user begins typing, the first suggestion appear inside the input box, no dropdowns anywhere at all. When the `Tab` or `Enter` key is pressed, the focus moves to the next input field based on the tabindex. See the example HTML for more details.
+As the user begins typing, the first suggestion appears inside the input box, no dropdowns anywhere at all. When the `Tab` or `Enter` key is pressed, the suggestion is accepted and the focus moves to the next input field based on the tabindex. See the example HTML for more details.
 
 ![Demo](optimized.gif)
 
