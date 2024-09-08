@@ -8,6 +8,15 @@ As the user begins typing, the first suggestion appears inside the input box, no
 
 ![Demo](optimized.gif)
 
+<details>
+<summary>Why not just use a datalist?</summary>
+
+1. It creates a dropdown/dropup 
+2. It doesn't select and move focus on when pressing Enter or Tab (it requires arrow down/up, enter, tab - too disturbing for fast data entry)
+
+![Datalist](datalist.gif)
+</details>
+
 
 ## Usage
 
@@ -39,3 +48,4 @@ You can create as many input fields / value arrays as needed.
 ```
 ## License
 No license, feel free to contribute or use any other way you want.
+
