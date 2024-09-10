@@ -64,14 +64,15 @@ function initACJSInputs(){
 
             if (suggestion && userInput) {
                 const suggestionPart = suggestion.substring(userInput.length);
-                suggestionDiv.innerHTML = '<span class="inv">' + userInput + '</span>' + suggestionPart;
+                const invisiblePart = suggestion.substring(0, userInput.length); // so if the suggestion is capitalized, it remains so
+                suggestionDiv.innerHTML = '<span class="inv">' + invisiblePart + '</span>' + suggestionPart;
             } else {
                 suggestionDiv.textContent = '';
             }
         });
 
         input.addEventListener('keydown', (event) => {
-            if (event.key === 'Tab' || event.key === 'Enter') {
+            if (event.key === 'Tab' && !event.shiftKey || event.key === 'Enter') {
                 event.preventDefault();
                 if (suggestionDiv.textContent) {
                     input.value = suggestionDiv.textContent;
